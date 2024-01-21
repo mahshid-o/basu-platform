@@ -8,3 +8,4 @@ def home(request):
 def room(request):
     return HttpResponse('Room')
 
+Create your views here.
