@@ -11,8 +11,7 @@ rooms = [
 
 
 def home(request):
-    context = {'rooms': rooms}
-    return render(request , 'home.html' , context)
+    return render(request , 'home.html')
 
 def room(request):
     return render(request , 'room.html')
