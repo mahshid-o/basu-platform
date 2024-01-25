@@ -6,27 +6,17 @@
 <style>
     
     .home-container{
-        display: grid;
-        grid-template-columns:1fr 3fr ;}
-</style>
+        display
+    }
 
+</style>
+<div
 
 <div class="home-container">
 
     <div>
         <h3>Browse Topics</h3>
         <hr>
-
-        <div>
-            <a href="{% url 'home' %}">All</a>
-        </div>
-
-        {% for topic in topics %}
-            <div>
-                <a href="{% url 'home' %}?q={{topic.name}}">{{topic.name}}</a>
-            </div>
-        {% endfor %}
-
     </div>
 
     <div>

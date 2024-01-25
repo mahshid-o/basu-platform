@@ -14,9 +14,9 @@ from .forms import RoomForm
 
 def home(request):
     
-    q = request.GET.get('q') if request.GET.get('q') != None else ''
+    q = request.GET.get('q') if request.GET.get('q')
     
-    rooms = Room.objects.filter(topic__name__icontains=q)
+    rooms = Room.objects.filter(topic__name=q)
     
     topics = Topic.objects.all()
     

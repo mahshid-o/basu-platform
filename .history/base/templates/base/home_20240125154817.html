@@ -18,7 +18,7 @@
         <hr>
 
         <div>
-            <a href="{% url 'home' %}">All</a>
+            <a href="{% url 'home' %}?q={{topic.name}}">{{topic.name}}</a>
         </div>
 
         {% for topic in topics %}
