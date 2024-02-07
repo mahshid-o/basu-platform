@@ -33,7 +33,7 @@
 
         <h5>{{room_count}} rooms available</h5>
 
-        <a href="{% url 'create-room'  %}">create Room</a>
+        <a href="{%  url 'create-room' room.id %}">create Room</a>
 
         <div>
             {%for room in rooms%}
