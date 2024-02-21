@@ -19,11 +19,11 @@
             <h3>{{user.username}}</h3>
             <p>@{{user.username}}</p>
             {% if request.user == user %}
-            <a href="{% url 'update-user' %}" class="btn btn--main btn--pill">Edit Profile</a>
+            <a href="{% url 'update-user' %}" class="btn btn--main btn--pill">ویرایش پروفایل</a>
             {% endif %}
           </div>
           <div class="profile__about">
-            <h3>About</h3>
+            <h3>درباره</h3>
             <p>{{user.bio}}</p>
           </div>
         </div>
