@@ -10,7 +10,7 @@ class User(AbstractUser):
     avatar = models.ImageField("آواتار",null=True,default="avatar.svg")
     
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['username']
 
 class Topic(models.Model):
     name = models.CharField("موضوع",max_length=200)
@@ -50,4 +50,5 @@ class Message(models.Model):
         return self.body[0:50]
 
     def __unicode__(self):
-            return 
+            return
+
